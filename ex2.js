@@ -58,19 +58,23 @@ function checkIfAllSameNumbers(array) {
 	return b
 }
 function cardFigures(number) {
-	switch (number) {
-		case 11: {
-			return "JACK"
+	if (number > 10) {
+		switch (number) {
+			case 11: {
+				return "JACK"
+			}
+			case 12: {
+				return "QUEEN"
+			}
+			case 13: {
+				return "KING"
+			}
+			case 14: {
+				return "ACE"
+			}
 		}
-		case 12: {
-			return "QUEEN"
-		}
-		case 13: {
-			return "KING"
-		}
-		case 14: {
-			return "ACE"
-		}
+	} else if (number <= 10) {
+		return number
 	}
 }
 const [numbers, colors] = separateNumberandColor(myCards)
