@@ -5,8 +5,10 @@
 
 ## General info
 Two tasks in JS:
+
 1.Scale riddle. With 8 balls, ex.  [1,2,1,1,1,1,1,1] get position of the “heavy” ball. 
   Indexes are to be chosen at random. Use weights comparison only two times.
+  
 2. Create a solution that will tell us what poker set we have. 
   The solution is to deal us 5 cards from the standard 52 card deck at random. 
   Based on cards on our hand the program should tell us what is the best poker set. 
